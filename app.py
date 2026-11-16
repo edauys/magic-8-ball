@@ -18,5 +18,3 @@ if submitted:
     else:
         st.write(f"{name.strip()} asks: {question.strip()}" if name.strip() else f"Question: {question.strip()}")
         st.success(f"Magic 8-Ball's answer: {get_answer()}")
-
-st.caption("For entertainment only. Adapted from a Codecademy learning exercise.")
