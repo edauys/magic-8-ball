@@ -1,35 +1,63 @@
-# 🎱 Magic 8-Ball
+# Magic 8-Ball
 
-An interactive Python Magic 8-Ball that answers yes-or-no questions with one of nine random fortunes. Built as an extension of the **Codecademy Magic 8-Ball** introductory Python exercise.
+An interactive Python application that generates randomized responses to yes-or-no questions through a command-line interface or Streamlit web application.
 
 ## Features
-- Enter your name (optional) and any yes-or-no question.
-- Receive one of nine randomly selected fortunes.
-- Friendly handling of empty questions.
-- Play repeatedly in the terminal, or use the Streamlit web interface.
 
-## Run in the terminal
-Requires Python 3.9 or newer. No third-party dependencies are needed.
+- Generates one of nine randomized responses to user-submitted questions.
+- Accepts optional names and custom questions.
+- Validates empty questions and supports multiple questions per session.
+- Provides command-line and browser-based interfaces.
+
+## Tech Stack
+
+- **Language:** Python 3.9+
+- **Standard Library:** `random`
+- **Web Framework:** Streamlit
+
+## Getting Started
+
+**Requirements:** Python 3.9 or later.
+
+### Clone the Repository
 
 ```bash
-python magic8.py
+git clone https://github.com/edauys/magic-8-ball.git
+cd magic-8-ball
 ```
 
-## Run the web app locally
+### Command-Line Version
 
 ```bash
-python -m pip install -r requirements.txt
-python -m streamlit run app.py
+python3 magic8.py
 ```
 
-## Publish on GitHub
-Create a new public repository named `magic-8-ball`, then upload these files through **Add file → Upload files**. Do not upload credentials, `.env` files, or other secrets.
+### Web Application
 
-## Deploy the web app
-In [Streamlit Community Cloud](https://share.streamlit.io/), connect the GitHub repository and choose `app.py` as the entry point. Follow the platform's prompts to deploy. Free hosting has availability and resource limitations.
+Install dependencies:
 
-## Attribution
-Based on Codecademy's **Magic 8-Ball** Python learning project. The terminal interaction, validation, reusable fortune function, and Streamlit interface are extensions to the original exercise.
+```bash
+python3 -m pip install -r requirements.txt
+```
 
-## License
-No license has been selected. Add a license if you want to grant reuse permissions.
+Launch the application:
+
+```bash
+python3 -m streamlit run app.py
+```
+
+The application runs locally at `http://localhost:8501`.
+
+## Project Structure
+
+```text
+magic-8-ball/
+├── app.py
+├── magic8.py
+├── requirements.txt
+└── README.md
+```
+
+## About
+
+A Python project demonstrating randomization, functions, input validation, and interactive application development.
